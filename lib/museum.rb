@@ -1,7 +1,6 @@
 class Museum
   attr_reader   :name,
-                :exhibits,
-                :new_exhibit
+                :exhibits
 
 
   def initialize(name, exhibits = {})
@@ -9,8 +8,9 @@ class Museum
     @exhibits = {}
   end
 
-  def add_exhibit(new_exhibit)
-    @exhibits[new_exhibit.keys[0]] = [new_exhibit.values[0]]
+  def add_exhibits
+    @exhibits[exhibits.keys[0]] = exhibits.values[0]
+    # @exhibits[exhibits] = exhibits
   end
 
 
