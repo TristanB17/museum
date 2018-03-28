@@ -8,9 +8,8 @@ class Museum
     @exhibits = {}
   end
 
-  def add_exhibits
-    @exhibits[exhibits.keys[0]] = exhibits.values[0]
-    # @exhibits[exhibits] = exhibits
+  def add_exhibits(new_exhibit, price)
+    @exhibits = Hash[new_exhibit => price]
   end
 
 

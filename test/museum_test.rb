@@ -27,8 +27,8 @@ class TestMuseum < Minitest::Test
   def test_museum_can_have_exhibits
     museum = Museum.new("The Cave of Wonders")
 
-    museum.add_exhibits({"The Magical Mystery Tour" => 10})
-    assert_equal({"The Magical Mystery Tour" => 10}, museum.add_exhibits)
+    museum.add_exhibits("The Magical Mystery Tour", 10)
+    assert_equal({"The Magical Mystery Tour" => 10}, museum.add_exhibits("The Magical Mystery Tour", 10))
   end
 
 
